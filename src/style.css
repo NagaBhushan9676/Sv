@@ -157,7 +157,7 @@
   animation: colorChange 8s infinite;
 }
 .menuList .marquee h3 {
-  animation: marqueee 7s linear infinite;
+  text-align: center;
 }
 .menuList .container {
   padding: 2rem;

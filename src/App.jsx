@@ -15,8 +15,10 @@ function App() {
       duration:800,
       offset:100,
       easing:'ease',
-      once:true
-    })
+      once:true,
+      
+    });AOS.refresh();
+
   },[])  
 
 
