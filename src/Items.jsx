@@ -316,7 +316,7 @@ const Items = () => {
 
       console.log(clickedName)
     return (
-        <div className='itemC '>
+        <div className='itemC ' data-aos='slide-down' data-aos-duration='1000'>
             <h3 className='text-center fs-1 '>{clickedName}</h3>
             <div className='container fs-5 '>
                 <table className='border' cellPadding="10" style={{ width: '100%', margin: '20px auto', textAlign: 'left' }}>

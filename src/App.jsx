@@ -1,5 +1,6 @@
-import { useState } from 'react'
-
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { useLocation,BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import './style.css'
@@ -9,7 +10,14 @@ import Items from './items'
 import ListItem from './ListItem';
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() =>{
+    AOS.init({
+      duration:800,
+      offset:100,
+      easing:'ease',
+      once:true
+    })
+  },[])  
 
 
   return (

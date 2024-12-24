@@ -20,15 +20,15 @@ const Homepage = () => {
         <div className='homeC'>
           
             <div className='titlehead'>
-               <span className='text-start fs-1'> <h2 >Welcome To</h2></span>
-                <h1 className='svtext'><span className="heading">SV</span> Food Court</h1> 
+               <span className='text-start fs-1' data-aos='slide-right'> <h2 >Welcome To</h2></span>
+                <h1 className='svtext' data-aos='zoom-in'><span className="heading" >SV</span> Food Court</h1> 
                 <h4 >Balabadhrapuram</h4>
             </div>
             <div>
             <div>
-                    <button className='btn btn-primary px-5 ' onClick={handleClick}>MENU CARD</button>
+                    <button className='btn btn-primary px-5 ' data-aos='flip-right' onClick={handleClick}>MENU CARD</button>
                 </div>
-                <h5 className=' '>Wishing you a Merry Christmas, a Happy New Year, and a Joyous Sankranti!
+                <h5 className=' ' data-aos='slide-up'>Wishing you a Merry Christmas, a Happy New Year, and a Joyous Sankranti!
                     Celebrate this festive season with us at SV Food Court . Indulge in delightful flavors,
                     warm hospitality, and moments of togetherness.
                     We look forward to making your visit a cherished memory!

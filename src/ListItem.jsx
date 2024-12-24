@@ -8,7 +8,7 @@ const ListItem = ({src,title}) => {
       }
 
     return (
-        <div className='listItemC'  onClick={() => handleClick(title)}>
+        <div className='listItemC'  onClick={() => handleClick(title)} data-aos='zoom-in' data-aos-duration='1000'>
             <div className='py-3'>
                 <img src={src} className="card-img-top" alt="..."/>
                 <div className="card-body">

@@ -71,7 +71,7 @@ const itemlist = [
 
     return (
         <div className='menuList '>
-            <marquee behavior="alternate" scrollamount="15"><h3>SV FOOD COURT MENU CARD</h3></marquee>
+            <div className='marquee'><h3>SV FOOD COURT MENU CARD</h3></div>
           <div className="container">
             <div className="row ">
                     {itemlist.map((title, index) => (

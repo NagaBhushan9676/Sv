@@ -38,6 +38,7 @@
           padding-bottom: none !important;
           text-align: start !important;
           font-family:sans-serif;
+          
       }
       h1{
           font-size: clamp(2rem,20vw,5rem);
@@ -68,8 +69,25 @@
       z-index: 1;
       &::after{
         @include posiBack();
-        background-color: #040700;
+        background-color: #070c00;
         filter: blur(60px);
+      }
+    }
+    @media  (max-width: 768px) {
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      h1{
+        position: relative;
+        z-index: 1;
+        &::after{
+          @include posiBack();
+          background-color: #00000041;
+          filter: blur(60px);
+        }
+      }
+      h5{
+        text-align: justify;
       }
     }
 }
@@ -85,12 +103,14 @@
   }
 }
 .listItemC{
-    border: 0.5px solid rgba(0, 0, 0, 0.233);
+    
     border-radius: 15px;
     transition: all 0.6s ease;
     color: rgb(0, 85, 255);
-    box-shadow: 0px 0px 4px rgba($color: #000000, $alpha: 0.5);
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgba($color: #fbfbfb, $alpha: 1.2);
     font-weight: 400;
+    
 
     &:hover{
         border-radius: 30px;
@@ -126,7 +146,12 @@
   padding: 1rem;
   background: linear-gradient(to right,rgba(0, 255, 0, 0.594),rgba(45, 250, 212, 0.785));
  
-    marquee{
+    .marquee{
+      width: 100%;
+        h3{
+          animation: marqueee 7s linear infinite;
+        }
+     
         animation: colorChange 8s infinite;
     }
 
@@ -135,8 +160,23 @@
       padding: 2rem;
       margin-bottom: 20px;
       border-radius: 25px;
-      box-shadow: 0px 0px 20px rgba(25, 18, 18, 0.621);
+      box-shadow: 0px 0px 10px rgba(241, 241, 241, 0.621);
     }
+    @media (max-width:760px) {
+      .marquee{
+        h3{
+          animation: none;
+        }
+      }
+    }
+}
+@keyframes marqueee {
+  0%{
+    transform: translateX(20%);
+  }
+  0%{
+    transform: translateX(100%);
+  }
 }
 @keyframes colorChange {
     0% {
@@ -180,10 +220,14 @@
       position: relative; 
       color: #f0e623;
       font-weight: 100 !important;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+      z-index: 1;
+      text-shadow: 0px 0px 2px rgb(240, 232, 232);
        &::before { 
        @include posiBack();
-         filter: blur(8px); 
+       background-color: #00000031;
+      text-shadow: 0px 0px 5px red;
+      filter: blur(10px);
+         
           
       } }
     div{

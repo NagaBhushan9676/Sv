@@ -1,23 +1,15 @@
 *{
   margin: none;
   padding: none;
+ 
+}
+body{
+  background: linear-gradient(rgb(72, 1, 1),rgba(0, 0, 0, 0.884));
 }
 #root {
   max-width:100%;
   margin: 0 auto;
+  
 }
-.fade-enter{
-  opacity: 0;
-}
-.fade-enter-active{
-  opacity: 1;
-  transition: opacity 300ms ease;
-}
-.fade-exit{
-  opacity: 1;
-}
-.fade-exit-active{
-  opacity: 0;
-  transition: opacity 300ms ease;
-}
+
 
